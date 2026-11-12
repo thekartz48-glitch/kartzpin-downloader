@@ -1,77 +1,57 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Kartzpin Downloader — a simple interface for Pinterest links.">
-  <title>Kartzpin Downloader</title>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Kartzpin Downloader — a simple Pinterest link helper.">
+  <title>Kartzpin Downloader — Pinterest Video Downloader</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <a class="brand" href="#home" aria-label="Kartzpin home">
-      <span class="brand-mark">K</span><span>KARTZ<span class="brand-light">PIN</span></span>
-    </a>
-    <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">☰</button>
-    <nav class="nav" id="mainNav">
-      <a href="#home">Home</a><a href="#features">Features</a><a href="#how">How to use</a><a href="#faq">FAQ</a>
-      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch colour mode">☾</button>
-    </nav>
-  </header>
-
-  <main>
-    <section class="hero" id="home">
-      <div class="hero-inner">
-        <p class="eyebrow">WELCOME TO KARTZPIN</p>
-        <h1><span>Pinterest</span><br>Downloader</h1>
-        <p class="hero-copy">A simple place to prepare Pinterest video, image and GIF links.</p>
-        <form class="download-form" id="downloadForm">
-          <label class="sr-only" for="pinUrl">Pinterest link</label>
-          <input id="pinUrl" type="url" placeholder="Paste Pinterest link here..." autocomplete="url">
-          <button class="paste-btn" id="pasteBtn" type="button">▣ <span>Paste</span></button>
-        </form>
-        <button class="download-btn" type="submit" form="downloadForm">Download</button>
-        <p class="notice" id="statusMessage" role="status">No login required. Only save content you own or have permission to download.</p>
-      </div>
-    </section>
-
-    <section class="section how-section" id="how">
-      <div class="section-heading"><p class="eyebrow red-text">QUICK &amp; SIMPLE</p><h2>How to use Kartzpin?</h2><p>Just follow these three easy steps.</p></div>
-      <div class="steps">
-        <article class="step-card"><span class="step-number">01</span><div class="step-icon">↗</div><h3>Copy link</h3><p>Open a public Pinterest Pin and copy its link.</p></article>
-        <article class="step-card"><span class="step-number">02</span><div class="step-icon">▤</div><h3>Paste link</h3><p>Paste the copied link into the box above.</p></article>
-        <article class="step-card"><span class="step-number">03</span><div class="step-icon">↓</div><h3>Continue</h3><p>When a supported download service is connected, follow its download steps.</p></article>
-      </div>
-    </section>
-
-    <section class="section features-section" id="features">
-      <div class="section-heading"><p class="eyebrow red-text">WHAT IT'S FOR</p><h2>Simple features</h2><p>One clean place for different Pinterest media links.</p></div>
-      <div class="feature-grid">
-        <article class="feature-card"><div class="feature-icon">▶</div><div><h3>Video links</h3><p>A clear starting point for Pinterest video links.</p></div></article>
-        <article class="feature-card"><div class="feature-icon">▧</div><div><h3>Image links</h3><p>Prepare a public Pin image link with a few taps.</p></div></article>
-        <article class="feature-card"><div class="feature-icon">GIF</div><div><h3>GIF links</h3><p>A simple interface for supported animated media links.</p></div></article>
-      </div>
-    </section>
-
-    <section class="section about-section">
-      <div class="about-mark">K</div>
-      <div><p class="eyebrow red-text">ABOUT KARTZPIN</p><h2>Less clutter. Easier to use.</h2><p>Kartzpin is designed to keep the link-pasting experience simple on mobile and desktop. No account is needed to use this page.</p></div>
-    </section>
-
-    <section class="section faq-section" id="faq">
-      <div class="section-heading"><p class="eyebrow red-text">NEED TO KNOW</p><h2>Frequently asked questions</h2></div>
-      <details><summary>Do I need to create an account?</summary><p>No. This website interface does not require visitor sign-in.</p></details>
-      <details><summary>Can I download private Pinterest content?</summary><p>No. Private, restricted or inaccessible content should not be downloaded. Use only content you own or have permission to save.</p></details>
-      <details><summary>Why doesn't the Download button download a file yet?</summary><p>The website design is ready, but a legitimate download service/API has not been connected. The button will not pretend a download has happened.</p></details>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <a class="brand footer-brand" href="#home"><span class="brand-mark">K</span><span>KARTZ<span class="brand-light">PIN</span></span></a>
-    <p>Simple links. Clear experience.</p>
-    <div class="footer-links"><a href="#home">Home</a><a href="#features">Features</a><a href="#faq">FAQ</a><a href="mailto:hello@kartzpin.example">Contact</a></div>
-    <small>© <span id="year"></span> Kartzpin. Use and download content only when you have permission.</small>
-  </footer>
-  <script src="script.js"></script>
-</body>
-</html>
+<header><div class="wrap footer-row">
+  <a class="brand" href="index.html"><span class="brand-mark">p</span><span>KARTZ<span>PIN</span></span></a>
+  <nav class="nav">
+    <a class="active" href="index.html">Home</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+  </nav>
+  <div style="display:flex;gap:9px;align-items:center">
+    <button class="theme-btn" id="themeToggle" aria-label="Toggle dark mode">☾</button>
+    <button class="menu-btn" id="menuToggle" aria-label="Open menu">☰</button>
+  </div>
+</div></header>
+<main>
+  <section class="hero">
+    <span class="orb one"></span><span class="orb two"></span>
+    <div class="wrap hero-content">
+      <div class="hero-logo">p</div>
+      <h1><span class="accent">Pinterest</span> Video Downloader</h1>
+      <p class="subtitle">A simple place to prepare Pinterest video, image and GIF links. Paste a link to get started.</p>
+      <form id="downloadForm">
+        <div class="download-card">
+          <div class="input-wrap"><span class="link-icon">🔗</span>
+            <input id="pinUrl" type="url" placeholder="Paste Pinterest link here..." aria-label="Pinterest link" required>
+          </div>
+          <button class="btn" id="pasteButton" type="button">▣ &nbsp; Paste</button>
+        </div>
+        <button class="btn main-btn" type="submit">⬇ &nbsp; Download</button>
+      </form>
+      <p class="status" id="status" role="status">No login required. Only save content you own or have permission to download.</p>
+    </div>
+  </section>
+  <section class="steps wrap">
+    <h2 class="section-title">How to Download?</h2>
+    <div class="step-grid">
+      <div class="step"><div class="step-icon">🔗</div><h3>1. Paste</h3><p>Copy and paste your Pinterest link.</p></div>
+      <div class="step"><div class="step-icon">⬇</div><h3>2. Download</h3><p>Submit the link to check whether it can be processed.</p></div>
+      <div class="step"><div class="step-icon">✓</div><h3>3. Save</h3><p>Save your file when an authorized download is available.</p></div>
+    </div>
+  </section>
+  <section class="info wrap"><div class="info-box">
+    <h2>Fast, simple and easy to use</h2>
+    <p>Kartzpin Downloader is designed with a clean interface, no-login visitor experience, and a light/dark theme switch. The download service still needs an authorized media provider before it can deliver files.</p>
+  </div></section>
+</main>
+<footer><div class="wrap footer-row">
+  <div class="footer-links"><a href="about.html">About Us</a><a href="contact.html">Contact Us</a><a href="faq.html">FAQ</a><a href="privacy-policy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a><a href="disclaimer.html">Disclaimer</a><a href="dmca.html">DMCA</a></div>
+  <span>© 2026 Kartzpin Downloader. All rights reserved.</span>
+</div></footer>
+<script src="app.js"></script>
+</body></html>
