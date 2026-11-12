@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Learn about Kartzpin Downloader, a simple interface for Pinterest media links.">
+  <title>About Us | Kartzpin Downloader</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .page-hero { background: var(--red); color: var(--white); text-align: center; padding: 54px 18px; }
+    .page-hero h1 { font-size: clamp(34px, 6vw, 54px); }
+    .content { width: min(850px, calc(100% - 36px)); margin: auto; padding: 48px 0 60px; }
+    .content h2 { margin-top: 28px; }
+    .content p, .content li { color: var(--muted); }
+    .content-card { border: 1px solid var(--line); border-radius: 10px; padding: 24px; margin: 22px 0; }
+    .back-link { display: inline-block; margin-top: 10px; color: var(--red); font-weight: 800; }
+    body.dark .content-card { background: var(--card); }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html#home" aria-label="Kartzpin home">
+      <span class="brand-mark">K</span><span>KARTZ<span class="brand-light">PIN</span></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">☰</button>
+    <nav class="nav" id="mainNav">
+      <a href="index.html#home">Home</a>
+      <a href="index.html#features">Features</a>
+      <a href="index.html#how">How to use</a>
+      <a href="index.html#faq">FAQ</a>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch colour mode">☾</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <p class="eyebrow">GET TO KNOW US</p>
+      <h1>About Kartzpin</h1>
+      <p class="hero-copy">Less clutter. Easier to use.</p>
+    </section>
+
+    <section class="content">
+      <div class="content-card">
+        <h2>Who we are</h2>
+        <p>Kartzpin is a simple website project created to make the experience of working with Pinterest media links clear and easy. The website is designed with a clean layout that works on mobile phones as well as desktop screens.</p>
+      </div>
+
+      <h2>Our purpose</h2>
+      <p>Our goal is to provide a straightforward place where visitors can enter a Pinterest link and understand the next steps without unnecessary clutter or a complicated sign-up process.</p>
+
+      <h2>Use content responsibly</h2>
+      <p>Please use Kartzpin only with content you own or have permission to download. Respect creators' copyrights, Pinterest's terms and any applicable laws. Private, restricted or otherwise inaccessible content should not be downloaded.</p>
+
+      <h2>Current website status</h2>
+      <p>The website interface is available online. The actual media-download service has not yet been connected, so submitting a link does not currently download a video, image or GIF.</p>
+
+      <h2>Contact</h2>
+      <p>For questions or feedback, please contact the Kartzpin website team through the contact details that will be published on this website.</p>
+
+      <a class="back-link" href="index.html#home">← Back to Home</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="index.html#home"><span class="brand-mark">K</span><span>KARTZ<span class="brand-light">PIN</span></span></a>
+    <p>Simple links. Clear experience.</p>
+    <div class="footer-links">
+      <a href="index.html#home">Home</a>
+      <a href="index.html#features">Features</a>
+      <a href="index.html#faq">FAQ</a>
+      <a href="about.html">About Us</a>
+    </div>
+    <small>© <span id="year"></span> Kartzpin. Use and download content only when you have permission.</small>
+  </footer>
+
+  <script>
+    const menuToggle = document.getElementById("menuToggle");
+    const mainNav = document.getElementById("mainNav");
+    const themeToggle = document.getElementById("themeToggle");
+    menuToggle.addEventListener("click", () => {
+      const isOpen = mainNav.classList.toggle("open");
+      menuToggle.setAttribute("aria-expanded", String(isOpen));
+      menuToggle.textContent = isOpen ? "×" : "☰";
+    });
+    mainNav.querySelectorAll("a").forEach(link => link.addEventListener("click", () => {
+      mainNav.classList.remove("open");
+      menuToggle.setAttribute("aria-expanded", "false");
+      menuToggle.textContent = "☰";
+    }));
+    function applyTheme(dark) {
+      document.body.classList.toggle("dark", dark);
+      themeToggle.textContent = dark ? "☀" : "☾";
+      themeToggle.setAttribute("aria-label", dark ? "Switch to light mode" : "Switch to dark mode");
+      localStorage.setItem("kartzpin-theme", dark ? "dark" : "light");
+    }
+    applyTheme(localStorage.getItem("kartzpin-theme") === "dark");
+    themeToggle.addEventListener("click", () => applyTheme(!document.body.classList.contains("dark")));
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
