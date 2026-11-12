@@ -1,43 +1,36 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="About Us - KARTZPIN DOWNLOADER">
-  <title>About Us | KARTZPIN DOWNLOADER</title>
-  <link rel="stylesheet" href="pages.css">
-</head>
-<body>
-  <header class="site-header">
-    <a class="brand" href="index.html" aria-label="KartzPin home">KARTZ<span>PIN</span></a>
-    <div class="header-actions">
-      <nav aria-label="Main navigation"><a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="how-to-download.html">How to Use</a>
-<a href="faq.html">FAQ</a>
-<a href="contact.html">Contact</a></nav>
-      <button class="theme-btn" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
-    </div>
-  </header>
-  <main class="page-wrap">
-    <span class="eyebrow">ABOUT KARTZPIN</span>
-    <h1>About Us <span class="accent">| KARTZPIN</span></h1>
-    <p class="lead">KartzPin Downloader aims to offer a simple, clear and mobile-friendly experience for people who want to access Pinterest content they are authorised to use.</p>
-    
-<section class="content-card"><h2>Who we are</h2><p>KartzPin Downloader is an independent website project. It is not affiliated with, endorsed by, or sponsored by Pinterest.</p></section>
-<section class="content-card"><h2>Our purpose</h2><p>We aim to make the user experience straightforward and explain responsible use clearly. Any download feature must be used only where you own the content, have permission, or otherwise have a lawful right to download it.</p></section>
-<section class="content-card"><h2>Respect creators</h2><p>Creators' rights matter. Do not use this website to copy, redistribute, sell, or publicly repost someone else's work without permission or a valid legal basis.</p></section>
-<section class="notice"><strong>Important:</strong> Pinterest and its content belong to their respective owners. Users must follow applicable laws and Pinterest's terms and policies.</section>
-
-  </main>
-  <footer class="site-footer">
-    <div class="footer-links"><a href="privacy-policy.html">Privacy Policy</a>
-<a href="terms.html">Terms</a>
-<a href="disclaimer.html">Disclaimer / Copyright</a>
-<a href="contact.html">Contact</a></div>
-    <p>© 2026 KARTZPIN DOWNLOADER. All rights reserved.</p>
-    <p class="small">Independent project. Not affiliated with or endorsed by Pinterest.</p>
-  </footer>
-  <script src="pages.js"></script>
-</body>
-</html>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Learn about the purpose of KARTZPIN Downloader.">
+<title>About KARTZPIN | KARTZPIN</title><link rel="stylesheet" href="pages.css">
+</head><body>
+<header class="site-header"><div class="header-inner">
+<a class="brand" href="index.html">KARTZ<span>PIN</span></a>
+<button class="menu-btn" type="button" aria-expanded="false" onclick="toggleMenu()">Menu ☰</button>
+<nav class="nav" id="mainNav" aria-label="Main navigation">
+<a href="index.html">Home</a><a href="about.html">About Us</a><a href="contact.html">Contact Us</a>
+</nav><button class="theme-btn" type="button" onclick="toggleTheme()" aria-label="Toggle light or dark mode">☾ / ☀</button>
+</div></header>
+<main class="page-wrap">
+<section class="hero"><div class="eyebrow">KARTZPIN DOWNLOADER</div><h1>About KARTZPIN</h1><p>Learn about the purpose of KARTZPIN Downloader.</p></section>
+<article class="content">
+<h2>What is KARTZPIN?</h2>
+<p>KARTZPIN is a web project designed to provide visitors with a simple interface for working with links to Pinterest content. The available features may change as the project develops.</p>
+<h2>Our approach</h2>
+<p>We aim to keep the experience clear, easy to use and mobile-friendly. We do not claim ownership of content hosted on Pinterest or by its creators.</p>
+<h2>Respect for creators</h2>
+<p>Please use content only when you have the rights or permission to do so. Always respect the original creator’s copyright and the terms that apply to the content.</p>
+</article>
+</main>
+<footer class="site-footer"><div class="footer-inner">
+<div><a class="brand" href="index.html">KARTZ<span>PIN</span></a><p class="small">Independent project. Not affiliated with Pinterest.</p></div>
+<div class="footer-links" aria-label="Footer links">
+<a href="about.html">About Us</a><a href="contact.html">Contact Us</a><a href="privacy-policy.html">Privacy Policy</a><a href="disclaimer.html">Disclaimer</a><a href="terms.html">Terms &amp; Conditions</a><a href="dmca.html">DMCA Policy</a>
+</div></div></footer>
+<script>
+(function(){try{if(localStorage.getItem('kartzpin-theme')==='dark'){document.documentElement.classList.add('dark')}}catch(e){}})();
+function toggleTheme(){var d=document.documentElement.classList.toggle('dark');try{localStorage.setItem('kartzpin-theme',d?'dark':'light')}catch(e){}}
+function toggleMenu(){var n=document.getElementById('mainNav'),b=document.querySelector('.menu-btn');var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false')}
+</script>
+</body></html>

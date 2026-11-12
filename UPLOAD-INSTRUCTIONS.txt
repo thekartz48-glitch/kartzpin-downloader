@@ -1,0 +1,43 @@
+KARTZPIN - Additional Pages Upload Pack
+
+FILES
+- about.html
+- contact.html
+- privacy-policy.html
+- disclaimer.html
+- terms.html
+- dmca.html
+- pages.css
+
+IMPORTANT BEFORE UPLOAD
+1. Open contact.html, privacy-policy.html, disclaimer.html, terms.html and dmca.html.
+2. Replace every occurrence of YOUR_EMAIL_HERE with your real public contact email.
+3. These are general starter templates, not legal advice. Update them to match your actual website features, data collection, analytics, advertising and processing practices.
+4. Upload all 7 files into the SAME GitHub repository folder as index.html, styles.css and script.js (usually the repository root).
+
+HOW TO UPLOAD ON MOBILE
+1. Open your GitHub repository in Chrome and sign in.
+2. Open the repository's Code tab.
+3. Tap Add file -> Upload files.
+4. Select the 7 files from this ZIP after extracting it on your phone.
+5. Scroll down, enter a commit message such as: Add website information pages.
+6. Tap Commit changes.
+7. Wait briefly, then open your live GitHub Pages website and test each page.
+
+CONNECT THE PAGES FROM YOUR EXISTING HOME PAGE
+The new pages have their own top menu and footer. To show links on the existing home page too:
+- Open index.html in GitHub and tap the pencil (Edit).
+- Add the following navigation links inside your existing header/nav area:
+  <a href="about.html">About Us</a>
+  <a href="contact.html">Contact Us</a>
+- Add the following links inside your existing footer:
+  <a href="about.html">About Us</a>
+  <a href="contact.html">Contact Us</a>
+  <a href="privacy-policy.html">Privacy Policy</a>
+  <a href="disclaimer.html">Disclaimer</a>
+  <a href="terms.html">Terms &amp; Conditions</a>
+  <a href="dmca.html">DMCA Policy</a>
+- Commit changes. Do not replace your entire index.html with one of these files.
+
+NOTE
+This pack uses pages.css and a self-contained theme toggle on the new pages. It does not modify your existing styles.css, script.js or index.html.

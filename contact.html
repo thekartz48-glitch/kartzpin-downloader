@@ -1,42 +1,36 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Contact Us - KARTZPIN DOWNLOADER">
-  <title>Contact Us | KARTZPIN DOWNLOADER</title>
-  <link rel="stylesheet" href="pages.css">
-</head>
-<body>
-  <header class="site-header">
-    <a class="brand" href="index.html" aria-label="KartzPin home">KARTZ<span>PIN</span></a>
-    <div class="header-actions">
-      <nav aria-label="Main navigation"><a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="how-to-download.html">How to Use</a>
-<a href="faq.html">FAQ</a>
-<a href="contact.html">Contact</a></nav>
-      <button class="theme-btn" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
-    </div>
-  </header>
-  <main class="page-wrap">
-    <span class="eyebrow">WE'RE HERE TO HELP</span>
-    <h1>Contact Us <span class="accent">| KARTZPIN</span></h1>
-    <p class="lead">Have a question, feedback, accessibility concern, or copyright complaint? Use the contact details configured by the website owner below.</p>
-    
-<section class="content-card"><h2>General support</h2><p>Add your real support email address here before publishing this page. Do not publish a placeholder email address.</p><p class="small">Website owner: replace this sentence with your support email and expected response time.</p></section>
-<section class="content-card"><h2>Copyright or rights complaint</h2><p>If you believe content is being made available through this website in a way that infringes your rights, contact the site owner with the page URL, identification of the work, your contact details, and a statement explaining your rights and the issue.</p><p class="small">Replace this section with a monitored rights-contact email or a working complaint process before launch.</p></section>
-<div class="notice"><strong>Setup required:</strong> This is a static GitHub Pages site. A contact form will not send messages unless you connect a form service or build a backend. Add a real contact method before launch.</div>
-
-  </main>
-  <footer class="site-footer">
-    <div class="footer-links"><a href="privacy-policy.html">Privacy Policy</a>
-<a href="terms.html">Terms</a>
-<a href="disclaimer.html">Disclaimer / Copyright</a>
-<a href="contact.html">Contact</a></div>
-    <p>© 2026 KARTZPIN DOWNLOADER. All rights reserved.</p>
-    <p class="small">Independent project. Not affiliated with or endorsed by Pinterest.</p>
-  </footer>
-  <script src="pages.js"></script>
-</body>
-</html>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Questions, feedback or rights-related requests? Get in touch.">
+<title>Contact Us | KARTZPIN</title><link rel="stylesheet" href="pages.css">
+</head><body>
+<header class="site-header"><div class="header-inner">
+<a class="brand" href="index.html">KARTZ<span>PIN</span></a>
+<button class="menu-btn" type="button" aria-expanded="false" onclick="toggleMenu()">Menu ☰</button>
+<nav class="nav" id="mainNav" aria-label="Main navigation">
+<a href="index.html">Home</a><a href="about.html">About Us</a><a href="contact.html">Contact Us</a>
+</nav><button class="theme-btn" type="button" onclick="toggleTheme()" aria-label="Toggle light or dark mode">☾ / ☀</button>
+</div></header>
+<main class="page-wrap">
+<section class="hero"><div class="eyebrow">KARTZPIN DOWNLOADER</div><h1>Contact Us</h1><p>Questions, feedback or rights-related requests? Get in touch.</p></section>
+<article class="content">
+<h2>Get in touch</h2>
+<p>For general questions, feedback, technical issues or website-related requests, contact the site owner by email.</p>
+<div class="notice"><strong>Email:</strong> <a href="mailto:YOUR_EMAIL_HERE">YOUR_EMAIL_HERE</a><br><span class="small">Replace YOUR_EMAIL_HERE in this file with your real contact email before publishing.</span></div>
+<h2>What to include</h2>
+<ul><li>A short description of your question or issue.</li><li>The page URL, if your message concerns a particular page.</li><li>For copyright matters, include the details requested on our DMCA Policy page.</li></ul>
+<p>We will review messages as reasonably possible. A response is not guaranteed within a particular timeframe.</p>
+</article>
+</main>
+<footer class="site-footer"><div class="footer-inner">
+<div><a class="brand" href="index.html">KARTZ<span>PIN</span></a><p class="small">Independent project. Not affiliated with Pinterest.</p></div>
+<div class="footer-links" aria-label="Footer links">
+<a href="about.html">About Us</a><a href="contact.html">Contact Us</a><a href="privacy-policy.html">Privacy Policy</a><a href="disclaimer.html">Disclaimer</a><a href="terms.html">Terms &amp; Conditions</a><a href="dmca.html">DMCA Policy</a>
+</div></div></footer>
+<script>
+(function(){try{if(localStorage.getItem('kartzpin-theme')==='dark'){document.documentElement.classList.add('dark')}}catch(e){}})();
+function toggleTheme(){var d=document.documentElement.classList.toggle('dark');try{localStorage.setItem('kartzpin-theme',d?'dark':'light')}catch(e){}}
+function toggleMenu(){var n=document.getElementById('mainNav'),b=document.querySelector('.menu-btn');var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false')}
+</script>
+</body></html>

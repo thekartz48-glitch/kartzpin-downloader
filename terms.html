@@ -1,10 +1,44 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Terms & Conditions - KARTZPIN DOWNLOADER"><title>Terms & Conditions | KARTZPIN DOWNLOADER</title>
-<link rel="stylesheet" href="./pages.css"></head><body>
-<header class="header"><div class="header-inner"><a class="logo" href="./index.html">KARTZ<span>PIN</span></a>
-<nav class="nav"><a href="./index.html">Home</a><a href="./about.html">About</a><a href="./how-to-download.html">How to Use</a><a href="./faq.html">FAQ</a><a href="./contact.html">Contact</a><button class="theme-btn" id="themeToggle" type="button" aria-label="Toggle dark mode">🌙</button></nav></div></header>
-<main class="container"><span class="tag">USE THE SERVICE RESPONSIBLY</span><h1>Terms & Conditions <span>| KARTZPIN</span></h1><p class="lead">Use KartzPin Downloader lawfully and respect creators’ rights and platform rules.</p>
-<section class="card"><h2>Permitted use</h2><p>Use the service only for content you own, have permission to use, or are otherwise legally entitled to download.</p></section><section class="card"><h2>Prohibited use</h2><p>Do not download or redistribute content unlawfully, bypass logins, private settings, passwords, DRM, or technical restrictions, or use the service for unlawful activity.</p></section><section class="card"><h2>Availability</h2><p>Features may change, pause, or stop. We do not promise every URL or format will work.</p></section><section class="card"><h2>Third-party services</h2><p>KartzPin is independent and not affiliated with Pinterest. Third-party services have their own terms.</p></section><section class="card"><h2>Your responsibility</h2><p>You are responsible for ensuring that your use of downloaded material is lawful and authorised.</p></section><div class="notice">Owner action required: Add operator details, governing law, dispute process, and legally required consumer terms. This is not legal advice.</div></main>
-<footer class="footer"><div class="footer-links"><a href="./privacy-policy.html">Privacy Policy</a><a href="./terms.html">Terms</a><a href="./disclaimer.html">Disclaimer</a><a href="./contact.html">Contact</a></div><p>© 2026 KARTZPIN DOWNLOADER. All rights reserved.</p><p>Independent project. Not affiliated with or endorsed by Pinterest.</p></footer>
-<script src="./pages.js"></script></body></html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Please read these basic terms before using this website.">
+<title>Terms & Conditions | KARTZPIN</title><link rel="stylesheet" href="pages.css">
+</head><body>
+<header class="site-header"><div class="header-inner">
+<a class="brand" href="index.html">KARTZ<span>PIN</span></a>
+<button class="menu-btn" type="button" aria-expanded="false" onclick="toggleMenu()">Menu ☰</button>
+<nav class="nav" id="mainNav" aria-label="Main navigation">
+<a href="index.html">Home</a><a href="about.html">About Us</a><a href="contact.html">Contact Us</a>
+</nav><button class="theme-btn" type="button" onclick="toggleTheme()" aria-label="Toggle light or dark mode">☾ / ☀</button>
+</div></header>
+<main class="page-wrap">
+<section class="hero"><div class="eyebrow">KARTZPIN DOWNLOADER</div><h1>Terms & Conditions</h1><p>Please read these basic terms before using this website.</p></section>
+<article class="content">
+<p><strong>Last updated: 12 November 2026</strong></p>
+<h2>Acceptable use</h2>
+<p>Use this website lawfully. Do not attempt to disrupt the site, bypass security, misuse its features, or use it to infringe another person’s rights.</p>
+<h2>Content and permissions</h2>
+<p>You must have the necessary rights or permission before downloading, copying, sharing or reusing third-party content. You are responsible for your actions and for checking applicable platform terms.</p>
+<h2>Intellectual property</h2>
+<p>The website’s original name, design and text may be protected by applicable intellectual property laws. Third-party names, logos and content belong to their respective owners.</p>
+<h2>Changes and availability</h2>
+<p>We may modify, suspend or discontinue any part of the website at any time. We may update these terms by publishing a revised version on this page.</p>
+<h2>No warranty</h2>
+<p>The website is provided without warranties to the extent permitted by applicable law. Nothing in these terms limits rights that cannot legally be limited.</p>
+<h2>Contact</h2>
+<p>Questions about these terms can be sent to <a href="mailto:YOUR_EMAIL_HERE">YOUR_EMAIL_HERE</a>.</p>
+<div class="notice">This is a general starter template. Consider local legal advice before relying on it as your final terms.</div>
+</article>
+</main>
+<footer class="site-footer"><div class="footer-inner">
+<div><a class="brand" href="index.html">KARTZ<span>PIN</span></a><p class="small">Independent project. Not affiliated with Pinterest.</p></div>
+<div class="footer-links" aria-label="Footer links">
+<a href="about.html">About Us</a><a href="contact.html">Contact Us</a><a href="privacy-policy.html">Privacy Policy</a><a href="disclaimer.html">Disclaimer</a><a href="terms.html">Terms &amp; Conditions</a><a href="dmca.html">DMCA Policy</a>
+</div></div></footer>
+<script>
+(function(){try{if(localStorage.getItem('kartzpin-theme')==='dark'){document.documentElement.classList.add('dark')}}catch(e){}})();
+function toggleTheme(){var d=document.documentElement.classList.toggle('dark');try{localStorage.setItem('kartzpin-theme',d?'dark':'light')}catch(e){}}
+function toggleMenu(){var n=document.getElementById('mainNav'),b=document.querySelector('.menu-btn');var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false')}
+</script>
+</body></html>
