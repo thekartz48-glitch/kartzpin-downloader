@@ -1,447 +1,210 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<meta name="description" content="Find answers to frequently asked questions about KARTZPIN Pinterest link checker and website features.">
-
-<meta name="theme-color" content="#c91f32">
-
-<title>FAQ - KARTZPIN</title>
-
-<link rel="stylesheet" href="styles.css">
-
-<style>
-.faq-hero {
-  background: #c91f32;
-  color: #ffffff;
-  text-align: center;
-  padding: 55px 20px;
-}
-
-.faq-hero h1 {
-  font-size: clamp(30px, 5vw, 46px);
-  margin: 0 0 12px;
-}
-
-.faq-hero p {
-  margin: 0;
-  font-size: 16px;
-}
-
-.faq-container {
-  width: min(850px, calc(100% - 32px));
-  margin: auto;
-  padding: 45px 0 60px;
-}
-
-.faq-intro {
-  text-align: center;
-  color: #777777;
-  margin-bottom: 28px;
-}
-
-.faq-item {
-  background: #ffffff;
-  border: 1px solid #e5e5e5;
-  border-radius: 10px;
-  margin-bottom: 13px;
-  overflow: hidden;
-}
-
-.faq-item summary {
-  padding: 18px;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: 700;
-  color: #222222;
-  list-style: none;
-  position: relative;
-  padding-right: 48px;
-}
-
-.faq-item summary::-webkit-details-marker {
-  display: none;
-}
-
-.faq-item summary::after {
-  content: "+";
-  position: absolute;
-  right: 18px;
-  font-size: 22px;
-  color: #c91f32;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.faq-item[open] summary::after {
-  content: "−";
-}
-
-.faq-item p {
-  padding: 0 18px 18px;
-  margin: 0;
-  line-height: 1.7;
-  color: #666666;
-  font-size: 14px;
-}
-
-.faq-item a {
-  color: #c91f32;
-  font-weight: 600;
-}
-
-.faq-contact {
-  margin-top: 30px;
-  padding: 28px 18px;
-  border-radius: 10px;
-  background: #f7f7f7;
-  text-align: center;
-}
-
-.faq-contact h2 {
-  margin: 0 0 10px;
-}
-
-.faq-contact p {
-  color: #666666;
-}
-
-.faq-contact a {
-  color: #c91f32;
-  font-weight: bold;
-}
-
-body.dark .faq-item {
-  background: #252525;
-  border-color: #444444;
-}
-
-body.dark .faq-item summary {
-  color: #ffffff;
-}
-
-body.dark .faq-item p {
-  color: #cccccc;
-}
-
-body.dark .faq-contact {
-  background: #252525;
-}
-
-body.dark .faq-intro {
-  color: #bbbbbb;
-}
-
-@media(max-width: 600px) {
-  .faq-hero {
-    padding: 40px 15px;
-  }
-
-  .faq-container {
-    padding: 30px 0 45px;
-  }
-
-  .faq-item summary {
-    font-size: 14px;
-    padding: 16px 42px 16px 14px;
-  }
-
-  .faq-item p {
-    padding: 0 14px 16px;
-  }
-}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Answers to common questions about using KARTZPIN, Pinterest links, supported devices, privacy, and responsible use.">
+  <meta name="theme-color" content="#c91f32">
+  <title>FAQ | KARTZPIN</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .faq-hero {
+      padding: 54px 18px 48px;
+      background: var(--red);
+      color: var(--white);
+      text-align: center;
+    }
+    .faq-hero-inner { width: min(760px, 100%); margin: auto; }
+    .faq-hero h1 { margin: 0; font-size: clamp(34px, 6vw, 52px); line-height: 1.1; letter-spacing: -1.5px; }
+    .faq-hero p:last-child { max-width: 600px; margin: 15px auto 0; }
+    .faq-content { width: min(850px, calc(100% - 36px)); margin: auto; padding: 48px 0 60px; }
+    .faq-intro { margin: 0 0 22px; color: var(--muted); text-align: center; }
+    .faq-list details {
+      margin: 0 0 12px;
+      padding: 0;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: var(--card);
+      box-shadow: 0 4px 14px rgba(0,0,0,.035);
+    }
+    .faq-list summary {
+      position: relative;
+      padding: 17px 48px 17px 18px;
+      list-style: none;
+      cursor: pointer;
+      font-weight: 800;
+    }
+    .faq-list summary::-webkit-details-marker { display: none; }
+    .faq-list summary::after {
+      content: "+";
+      position: absolute;
+      top: 50%;
+      right: 18px;
+      transform: translateY(-50%);
+      color: var(--red);
+      font-size: 23px;
+      line-height: 1;
+    }
+    .faq-list details[open] summary::after { content: "−"; }
+    .faq-list details p {
+      margin: 0;
+      padding: 0 18px 18px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .faq-contact {
+      margin-top: 28px;
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: var(--soft);
+      text-align: center;
+    }
+    .faq-contact h2 { font-size: 21px; }
+    .faq-contact p { margin: 8px 0 0; color: var(--muted); font-size: 14px; }
+    .faq-contact a { color: var(--red); font-weight: 800; text-decoration: underline; }
+    body.dark .faq-list details { box-shadow: none; }
+    body.dark .faq-contact { background: #262626; }
+    @media (max-width: 700px) {
+      .faq-hero { padding: 42px 16px 38px; }
+      .faq-content { padding: 34px 0 44px; }
+      .faq-list summary { padding: 15px 42px 15px 14px; font-size: 15px; }
+      .faq-list details p { padding: 0 14px 15px; }
+      .faq-contact { padding: 18px 14px; }
+    }
+  </style>
 </head>
-
 <body>
-
-<!-- HEADER -->
-
-<header class="site-header">
-
-<a class="brand" href="index.html">
-<span class="brand-mark">K</span>
-<span>KARTZ<span class="brand-light">PIN</span></span>
-</a>
-
-<button
-class="menu-toggle"
-id="menuToggle"
-type="button"
-aria-label="Open menu"
-aria-expanded="false">
-☰
-</button>
-
-<nav class="nav" id="mainNav">
-
-<a href="index.html#home">Home</a>
-
-<a href="index.html#features">Features</a>
-
-<a href="index.html#how">How to use</a>
-
-<a href="faq.html" aria-current="page">FAQ</a>
-
-<button
-class="theme-toggle"
-id="themeToggle"
-type="button"
-aria-label="Switch colour mode">
-☾
-</button>
-
-</nav>
-</header>
-
-<!-- FAQ HERO -->
-
-<main>
-
-<section class="faq-hero">
-
-<h1>Frequently Asked Questions</h1>
-
-<p>Everything you need to know about KARTZPIN.</p>
-
-</section>
-
-<!-- FAQ QUESTIONS -->
-
-<section class="faq-container">
-
-<p class="faq-intro">
-Find quick answers to common questions about our website.
-</p>
-
-<details class="faq-item">
-<summary>1. What is KARTZPIN?</summary>
-<p>
-KARTZPIN is a simple web interface designed to help visitors enter and check Pinterest links.
-</p>
-</details>
-
-<details class="faq-item">
-<summary>2. How do I use KARTZPIN?</summary>
-<p>
-Copy a Pinterest Pin link, paste it into the input box on the homepage and select the Download option.
-</p>
-</details>
-
-<details class="faq-item">
-<summary>3. Is KARTZPIN free to use?</summary>
-<p>
-The current website interface is available without a paid account.
-</p>
-</details>
-
-<details class="faq-item">
-<summary>4. Do I need to create an account?</summary>
-<p>
-No account or login is required to use the current website interface.
-</p>
-</details>
-
-<details class="faq-item">
-<summary>5. Which Pinterest links can I enter?</summary>
-<p>
-You can enter Pinterest web links, including Pin links. The current version checks the link format only.
-</p>
-</details>
-
-<details class="faq-item">
-<summary>6. Can I download Pinterest videos and images right now?</summary>
-<p>
-Not yet. The current website is a front-end interface. A working media download service or API has not been connected.
-</p>
-</details>
-
-<details class="faq-item">
-<summary>7. Can I download private Pinterest content?</summary>
-<p>
-No. Do not attempt to access private or restricted content. Only use content you own or have permission to download.
-</p>
-</details>
-
-<details class="faq-item">
-<summary>8. Why is my Pinterest link showing as invalid?</summary>
-<p>
-Check that you copied the complete Pinterest URL. Remove extra spaces and try pasting the link again.
-</p>
-</details>
-
-<details class="faq-item">
-<summary>9. Is it safe to use downloaded content?</summary>
-<p>
-Always respect the original creator's copyright, Pinterest's terms and applicable laws. Obtain permission whenever required.
-</p>
-</details>
-
-<details class="faq-item">
-<summary>10. Does KARTZPIN store my links?</summary>
-<p>
-The current front-end link check runs in your browser. For more information, read our
-<a href="privacy-policy.html">Privacy Policy</a>.
-</p>
-</details>
-
-<details class="faq-item">
-<summary>11. How can I report a problem?</summary>
-<p>
-If you experience a problem, contact us through our
-<a href="contact.html">Contact Us</a> page.
-</p>
-</details>
-
-<!-- CONTACT -->
-
-<div class="faq-contact">
-
-<h2>Still Have Questions?</h2>
-
-<p>
-We are happy to receive your questions and feedback.
-</p>
-
-<p>
-<a href="contact.html">Contact KARTZPIN</a>
-</p>
-
-</div>
-
-</section>
-
-</main>
-
-<!-- FOOTER -->
-
-<footer class="site-footer">
-
-<a class="brand footer-brand" href="index.html">
-<span class="brand-mark">K</span>
-<span>KARTZ<span class="brand-light">PIN</span></span>
-</a>
-
-<p>Simple links. Clear experience.</p>
-
-<div class="footer-links">
-
-<a href="index.html">Home</a>
-
-<a href="about.html">About</a>
-
-<a href="contact.html">Contact</a>
-
-<a href="faq.html">FAQ</a>
-
-<a href="privacy-policy.html">Privacy Policy</a>
-
-<a href="disclaimer.html">Disclaimer</a>
-
-<a href="terms.html">Terms &amp; Conditions</a>
-
-</div>
-
-<small>
-© <span id="year"></span> KARTZPIN. All rights reserved.
-</small>
-
-</footer>
-
-<!-- JAVASCRIPT -->
-
-<script>
-
-const menuToggle =
-document.getElementById("menuToggle");
-
-const mainNav =
-document.getElementById("mainNav");
-
-const themeToggle =
-document.getElementById("themeToggle");
-
-menuToggle.addEventListener("click", function() {
-
-const isOpen =
-mainNav.classList.toggle("open");
-
-menuToggle.setAttribute(
-"aria-expanded",
-String(isOpen)
-);
-
-menuToggle.textContent =
-isOpen ? "×" : "☰";
-
-});
-
-mainNav.querySelectorAll("a").forEach(function(link) {
-
-link.addEventListener("click", function() {
-
-mainNav.classList.remove("open");
-
-menuToggle.setAttribute(
-"aria-expanded",
-"false"
-);
-
-menuToggle.textContent = "☰";
-
-});
-
-});
-
-function applyTheme(dark) {
-
-document.body.classList.toggle("dark", dark);
-
-themeToggle.textContent =
-dark ? "☀" : "☾";
-
-themeToggle.setAttribute(
-"aria-label",
-dark ? "Switch to light mode" : "Switch to dark mode"
-);
-
-try {
-
-localStorage.setItem(
-"kartzpin-theme",
-dark ? "dark" : "light"
-);
-
-} catch(error) {}
-
-}
-
-let savedTheme = "light";
-
-try {
-
-savedTheme =
-localStorage.getItem("kartzpin-theme") || "light";
-
-} catch(error) {}
-
-applyTheme(savedTheme === "dark");
-
-themeToggle.addEventListener("click", function() {
-
-applyTheme(
-!document.body.classList.contains("dark")
-);
-
-});
-
-document.getElementById("year").textContent =
-new Date().getFullYear();
-
-</script>
-
+  <header class="site-header">
+    <a class="brand" href="index.html#home" aria-label="Kartzpin home">
+      <span class="brand-mark">K</span><span>KARTZ<span class="brand-light">PIN</span></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+    <nav class="nav" id="mainNav">
+      <a href="index.html#home">Home</a>
+      <a href="index.html#features">Features</a>
+      <a href="index.html#how">How to use</a>
+      <a href="faq.html" aria-current="page">FAQ</a>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch colour mode">☾</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="faq-hero">
+      <div class="faq-hero-inner">
+        <p class="eyebrow">NEED TO KNOW</p>
+        <h1>Frequently Asked Questions</h1>
+        <p>Find clear answers about KARTZPIN, Pinterest links, and the website’s current features.</p>
+      </div>
+    </section>
+
+    <section class="faq-content" aria-label="Frequently asked questions">
+      <p class="faq-intro">Can't find the answer you're looking for? Contact us using the email at the bottom of this page.</p>
+
+      <div class="faq-list">
+        <details>
+          <summary>What is KARTZPIN Downloader and how does it work?</summary>
+          <p>KARTZPIN Downloader is a simple online tool designed to help users access Pinterest media downloads. Copy a Pinterest Pin link, paste it into the input box, and select Download. The download processing service is currently under development.</p>
+        </details>
+
+        <details>
+          <summary>Is KARTZPIN Downloader free to use?</summary>
+          <p>Yes. KARTZPIN is designed to provide a free and easy-to-use experience. You do not need to purchase a subscription or pay a fee to access the website.</p>
+        </details>
+
+        <details>
+          <summary>How can I download videos, images, or GIFs from Pinterest?</summary>
+          <p>Copy the Pinterest Pin URL and paste it into the input box on KARTZPIN, then select Download. Please note that actual video, image, and GIF downloading is not available yet because the download service is still being developed.</p>
+        </details>
+
+        <details>
+          <summary>Do I need to install any app or create an account to use KARTZPIN?</summary>
+          <p>No. KARTZPIN is a web-based tool, so you do not need to install an additional application or create an account to use its current website features.</p>
+        </details>
+
+        <details>
+          <summary>Can I use KARTZPIN on Android, iPhone, and desktop browsers?</summary>
+          <p>Yes. KARTZPIN is designed for mobile phones, tablets, and desktop devices. You can open the website in modern browsers such as Chrome, Firefox, Safari, and Edge. The experience may vary slightly between browsers.</p>
+        </details>
+
+        <details>
+          <summary>Why is my Pinterest link not working or showing an error?</summary>
+          <p>Make sure you copied the complete Pinterest Pin URL and pasted it correctly. Check that the link belongs to Pinterest and is publicly accessible. Some download-related errors may also occur because the download processing service is still under development.</p>
+        </details>
+
+        <details>
+          <summary>Can I download content from private Pinterest boards or accounts?</summary>
+          <p>No. KARTZPIN is not designed to access private or restricted Pinterest content. Only use publicly accessible content that you own or have permission to download.</p>
+        </details>
+
+        <details>
+          <summary>Is it safe to use KARTZPIN, and can I use downloaded content commercially?</summary>
+          <p>Use the website carefully and review our <a href="privacy-policy.html">Privacy Policy</a> to understand how submitted links and technical information are handled. Downloading content does not automatically give you permission to reuse it. You must have the necessary rights or permission from the original content owner before using material commercially.</p>
+        </details>
+      </div>
+
+      <div class="faq-contact">
+        <h2>Still have a question?</h2>
+        <p>We welcome questions and feedback about the website.</p>
+        <p><a href="mailto:Kartzpin@gmail.com">Kartzpin@gmail.com</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="index.html#home">
+      <span class="brand-mark">K</span><span>KARTZ<span class="brand-light">PIN</span></span>
+    </a>
+    <p>Simple links. Clear experience.</p>
+    <div class="footer-links">
+      <a href="index.html#home">Home</a>
+      <a href="index.html#features">Features</a>
+      <a href="index.html#how">How to use</a>
+      <a href="faq.html" aria-current="page">FAQ</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy-policy.html">Privacy</a>
+      <a href="disclaimer.html">Disclaimer</a>
+      <a href="terms.html">Terms</a>
+    </div>
+    <small>© <span id="year"></span> Kartzpin. Use and download content only when you have permission.</small>
+  </footer>
+
+  <script>
+    const menuToggle = document.getElementById("menuToggle");
+    const mainNav = document.getElementById("mainNav");
+    const themeToggle = document.getElementById("themeToggle");
+
+    menuToggle.addEventListener("click", () => {
+      const isOpen = mainNav.classList.toggle("open");
+      menuToggle.setAttribute("aria-expanded", String(isOpen));
+      menuToggle.textContent = isOpen ? "×" : "☰";
+    });
+
+    mainNav.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        mainNav.classList.remove("open");
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.textContent = "☰";
+      });
+    });
+
+    function applyTheme(dark) {
+      document.body.classList.toggle("dark", dark);
+      themeToggle.textContent = dark ? "☀" : "☾";
+      themeToggle.setAttribute("aria-label", dark ? "Switch to light mode" : "Switch to dark mode");
+      try { localStorage.setItem("kartzpin-theme", dark ? "dark" : "light"); } catch (error) {}
+    }
+
+    let savedTheme = "light";
+    try { savedTheme = localStorage.getItem("kartzpin-theme") || "light"; } catch (error) {}
+    applyTheme(savedTheme === "dark");
+    themeToggle.addEventListener("click", () => {
+      applyTheme(!document.body.classList.contains("dark"));
+    });
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
